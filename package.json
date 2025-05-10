@@ -1,0 +1,27 @@
+{
+  "name": "entrega-final",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "src/app.js",
+  "scripts": {
+    "dev": "nodemon server.js",
+    "start": "node server.js",
+    "test": "cross-env NODE_ENV=test mocha --file test/setup.js --timeout 10000 --exit"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "mongoose": "^8.4.0",
+    "morgan": "^1.10.0",
+    "swagger-jsdoc": "^6.2.8",
+    "swagger-ui-express": "^4.6.3"
+  },
+  "devDependencies": {
+    "chai": "^5.1.0",
+    "cross-env": "^7.0.3",
+    "mocha": "^10.3.0",
+    "nodemon": "^3.1.0",
+    "supertest": "^7.1.0"
+  }
+}
